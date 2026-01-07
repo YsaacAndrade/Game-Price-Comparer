@@ -77,7 +77,9 @@ By leveraging the **IsThereAnyDeal** public API, this project automates the comp
 
 - Focused exclusively on price comparison  
 - No purchasing, authentication, or user account management  
-- Dependent on the availability and accuracy of the external API  
+- No local data persistence  
+- Dependent on the availability, stability, and accuracy of the external API  
+- Results reflect the data returned at the time of the request  
 
 ---
 
@@ -98,7 +100,7 @@ A aplicação consome uma API REST externa para obter dados atualizados de preç
 - Identificação da loja com o menor preço disponível  
 - Exibição do preço regular (média de mercado)  
 - Link direto para a página do produto na loja correspondente  
-- Interface CLI simples e eficiente  
+- Interação simples e eficiente via linha de comando  
 
 ---
 
@@ -119,12 +121,41 @@ A aplicação consome uma API REST externa para obter dados atualizados de preç
   - Comunicação com a API  
   - Regras de negócio  
   - Interface de linha de comando  
-- Código focado em legibilidade, manutenção e testabilidade  
+- Código projetado para legibilidade, manutenção e testabilidade  
+
+---
+
+## Uso
+
+1. Execute a aplicação via terminal  
+2. Selecione se a busca é por **jogo** ou **DLC**  
+3. Informe o nome do produto  
+4. Receba a saída estruturada com informações de preço e loja  
+
+---
+
+## Aprendizados Técnicos
+
+- Consumo e processamento de dados provenientes de uma API REST externa  
+- Utilização de endpoints, métodos HTTP e respostas JSON estruturadas  
+- Desenvolvimento de aplicações CLI com responsabilidades bem definidas  
+- Escrita de código Python limpo, modular e testável  
+- Automação da resolução de um problema real  
 
 ---
 
 ## Motivação
 
-O processo de consultar manualmente diversas lojas digitais para encontrar o menor preço de um jogo é repetitivo e pouco eficiente.
+Consultar manualmente diversas lojas digitais para encontrar o menor preço de um jogo é um processo repetitivo e pouco eficiente.
 
 Utilizando a API pública do **IsThereAnyDeal**, esta aplicação automatiza a comparação de preços e fornece informações objetivas por meio de uma interface de linha de comando simples e direta.
+
+---
+
+## Escopo & Limitações
+
+- Projeto focado exclusivamente na **comparação de preços**  
+- Não realiza compras, autenticação de usuários ou gerenciamento de contas  
+- Não possui persistência de dados local  
+- Depende da **disponibilidade, estabilidade e precisão** da API externa  
+- Os resultados exibidos refletem os dados retornados no momento da consulta  
