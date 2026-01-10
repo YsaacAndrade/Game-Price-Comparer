@@ -10,6 +10,9 @@ A Python CLI application for querying and comparing game and DLC prices across m
 
 **Game Price Comparer** is a command-line application built with Python that enables users to search for a game or DLC and automatically identify the lowest available price across multiple digital stores.
 
+## Demo
+https://github.com/user-attachments/assets/c821e6ac-ca05-46f1-96ad-bf74eb35209b
+
 The application consumes an external REST API to retrieve up-to-date pricing data and presents the results in a clear and structured CLI output.
 
 ---
