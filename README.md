@@ -1,4 +1,4 @@
-# 🎮 Game Price Comparer
+#  Game Price Comparer
 
 A Python CLI application for querying and comparing game and DLC prices across multiple digital storefronts using a public REST API.
 
